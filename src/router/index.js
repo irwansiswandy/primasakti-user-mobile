@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '../components/Home';
+import Index from '../components/Index';
 import HelloWorld from '../components/HelloWorld';
 import Counter from '../components/Counter';
 import Primasakti from '../components/Primasakti';
@@ -12,9 +12,9 @@ const router = new VueRouter({
   pageRouting: true,
   routes: [
     {
-        path: '/home',
-        component: Home,
-        meta: { title: 'Home' },
+        path: '/',
+        component: Index,
+        meta: { title: 'Main Page' },
     },
     {
         path: '/hello',
@@ -33,11 +33,11 @@ const router = new VueRouter({
     },
     {
         path: '*',
-        redirect: '/home'
+        redirect: '/'
     },
   ],
 });
 
-router.replace('/home');
+router.replace('/');
 
 module.exports = router;
