@@ -6,9 +6,6 @@ import store from './store';
 
 import './styles.scss';
 
-// import Vuetify from 'vuetify';
-// Vue.use(Vuetify);
-
 import Auth from './plugins/auth.js';
 Vue.use(Auth);
 

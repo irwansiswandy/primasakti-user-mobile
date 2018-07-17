@@ -1,9 +1,9 @@
 import Vue from 'nativescript-vue';
-import VueRouter from 'vue-router';
 
+import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
-import Index from '../components/Index';
+import MainPage from '../components/MainPage';
 import HelloWorld from '../components/HelloWorld';
 import Counter from '../components/Counter';
 import Primasakti from '../components/Primasakti';
@@ -13,7 +13,7 @@ const router = new VueRouter({
   routes: [
     {
         path: '/',
-        component: Index,
+        component: MainPage,
         meta: { title: 'Main Page' },
     },
     {
